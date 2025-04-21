@@ -8,6 +8,11 @@ export default defineConfig({
   workers: 1,
   reporter: [['html', { open: 'never' }] , ['allure-playwright']],
   use: {
+    headless: true,
+    // принудительно отбразить UI на английском
+    locale: 'en-US',
+    // можно ещё задать и часовой пояс, если он влияет:
+    timezoneId: 'UTC',
     trace: 'on-first-retry',
     timeout: 6000000, // Общий таймаут для всех тестов
     expect: {
