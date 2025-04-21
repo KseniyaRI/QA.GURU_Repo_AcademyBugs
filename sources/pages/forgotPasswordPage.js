@@ -1,8 +1,8 @@
 export class ForgotPasswordPage {
     constructor(page) {
         this.page = page
-        this.emailUserBuild = page.getByRole('textbox', { name: 'Email', exact: true })
         this.retrievePasswordButton = page.getByRole('button', { name: 'RETRIEVE PASSWORD' })
+        this.emailUserBuild = page.locator('#ec_account_forgot_password_input_field');
     }
 
     async enterUserEmail(email) {

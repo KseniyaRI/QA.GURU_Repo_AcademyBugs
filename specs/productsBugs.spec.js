@@ -24,7 +24,6 @@ test('Переключение количества продуктов на ст
 test.describe('Баги по товарам', () => {
   test.beforeEach(async ({ page }) => {
       const productsListPage = new ProductsListPage(page);
-      const bugPopupsPage = new BugPopupsPage(page);
       
       await productsListPage.open(URL);
       await productsListPage.acceptCookies();
