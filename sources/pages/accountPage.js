@@ -1,7 +1,7 @@
 export class AccountPage{
     constructor(page){
         this.billingInformationLink = page.locator('.ec_account_dashboard_link.ec_cart_input_row')
-        this.billingInformationLink = page.locator('ec_account_dashboard_link') 
+        this.billingInformationLink = page.locator('.ec_account_dashboard_link') 
         this.billingAddressLoader = page.locator('.ec_cart_billing_info_update_loader.academy-bug-18')
     }
 

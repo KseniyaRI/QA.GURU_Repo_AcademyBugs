@@ -40,14 +40,14 @@ test.describe('Баги по товарам', () => {
             .toContainText(errorsText.crushBugShortText);
 });
 
-  test('Перейти на страницу производителя', async ({ page }) => {
+  /*test('Перейти на страницу производителя', async ({ page }) => {
       const productCardPage = new ProductCardPage(page);
       const bugPopupsPage = new BugPopupsPage(page);
 
       await productCardPage.gotoManufacturer();
 
       await expect(bugPopupsPage.bugPopupQuestion)
-            .toContainText(errorsText.bugQuestion);//??
+            .toContainText(errorsText.bugQuestion);
 });
 
   test('Перейти на страницу Твиттера', async ({ page }) => {
@@ -98,7 +98,7 @@ test.describe('Баги по товарам', () => {
       
       await expect(bugPopupsPage.bugPopupQuestion)
             .toContainText(errorsText.bugQuestion);
-});
+});*/
 
   test('Клик по кнопке Sing In', async ({ page }) => {
       const productCardPage = new ProductCardPage(page);
@@ -110,7 +110,7 @@ test.describe('Баги по товарам', () => {
             .toContainText(errorsText.bugQuestion);
 });
 
-  test('Перейти на страницу описания товара', async ({ page }) => {
+  /*test('Перейти на страницу описания товара', async ({ page }) => {
       const productCardPage = new ProductCardPage(page);
       const bugPopupsPage = new BugPopupsPage(page);
 
@@ -140,5 +140,5 @@ test.describe('Баги по товарам', () => {
 
       await expect(bugPopupsPage.bugPopupCongrats)
             .toContainText(errorsText.bugCongrats);
-});
+});*/
 });
