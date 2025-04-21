@@ -13,13 +13,13 @@ export class ProductCardPage {
         this.signInButton = page.getByRole('button', { name: 'SIGN IN' })
         this.postCommentButton = page.getByRole('button', { name: 'Post Comment' })
         this.filterByPriceItem = page.getByRole('link', { name: '$15.00 - $19.99 (1)' })
-        this.loaderMySpace = page.locator('.span.ec_cart_billing_info_update_loader')
+        this.loaderMySpace = page.locator('#span.ec_cart_billing_info_update_loader')
         this.errorMySpace = page.getByText('Please wait…')
-        this.loaderHotItem = page.locator('.ec_cart_billing_info_update_loader.academy-bug-19');
-        this.descriptionButton = page.locator('.ec_details_description.academy-bug')
+        this.loaderHotItem = page.locator('#ec_cart_billing_info_update_loader.academy-bug-19');
+        this.descriptionButton = page.locator('#ec_details_description.academy-bug')
         this.addToCartButton = page.getByRole('button', { name: 'ADD TO CART' })
         this.totalPriceButton = page.locator('#ec_cart_total')
-        this.quantityField = page.locator('.ec_quantity')
+        this.quantityField = page.locator('#ec_quantity')
         this.updateQuantityButton = page.getByText('UPDATE')
     }
 
