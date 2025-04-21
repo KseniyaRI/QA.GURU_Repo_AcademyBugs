@@ -10,6 +10,10 @@ on:
 # ручной запуск
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages:   write
+
 jobs:
   testE2E:
     runs-on: ubuntu-latest
