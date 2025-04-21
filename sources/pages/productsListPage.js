@@ -4,11 +4,19 @@ export class ProductsListPage {
         this.minCountProducts = page.getByRole('link', { name: '10' })
         this.addProductButton = page.locator('#ec_add_to_cart_27')
         this.productCard = page.locator('#ec_product_image_effect_4881370')
+        this.acceptCookiesButton = page.getByRole('button', { name: 'Accept cookies' })
     }
     //переход по ссылке, указанной в constURL.js
     async open(URL) {
         await this.page.goto(URL);
     };
+
+    // принятие кукисов
+    async acceptCookies() {
+        await this.acceptCookiesButton.waitFor({ state: 'attached' });
+        await this.acceptCookiesButton.waitFor({ state: 'visible' });
+        await this.acceptCookiesButton.click();
+    }
 
     // переход на страницу с 10 товарами
     async gotoMinCountProducts() {

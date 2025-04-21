@@ -25,6 +25,7 @@ test.describe('Баги по аккаунту', () => {
       const productCardPage = new ProductCardPage(page);
       
       await productsListPage.open(URL);
+      await productsListPage.acceptCookies();
       await productsListPage.gotoProductCard();
       await productCardPage.gotoSignUp();
 });
