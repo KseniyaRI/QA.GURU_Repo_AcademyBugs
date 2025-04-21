@@ -6,6 +6,6 @@ export class BugPopupsPage {
         this.bugLayer = page.locator('.academy-bug-overlay').first()
         // this.bugLayer = page.locator('#academy-bug-overlay')
         // this.bugLayerHeading = page.locator('h5');
-        this.crashLayer = page.locator('.academy-crash-overlay-bug')
+        this.crashLayer = page.locator('.academy-crash-overlay-bug').first()
     }
 }
