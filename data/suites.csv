@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","60332","Восстановление пароля","chromium","Mon Apr 21 09:33:23 GMT 2025","broken","Mon Apr 21 09:34:23 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
-"","60353","Клик по адресу платежной информации","chromium","Mon Apr 21 09:27:13 GMT 2025","broken","Mon Apr 21 09:28:14 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
-"","60339","Добавление платежной информации","chromium","Mon Apr 21 09:30:18 GMT 2025","broken","Mon Apr 21 09:31:18 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
+"","8896","Восстановление пароля","chromium","Mon Apr 21 10:05:24 GMT 2025","passed","Mon Apr 21 10:05:33 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
+"","15708","Добавление платежной информации","chromium","Mon Apr 21 10:05:09 GMT 2025","passed","Mon Apr 21 10:05:24 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
+"","13273","Клик по адресу платежной информации","chromium","Mon Apr 21 10:04:55 GMT 2025","passed","Mon Apr 21 10:05:08 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
