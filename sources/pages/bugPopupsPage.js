@@ -4,5 +4,6 @@ export class BugPopupsPage {
         this.bugPopupQuestion = page.locator('#bug-popup')
         this.bugLayerInfo = page.locator('.academy-bug-info-overlay')
         this.bugLayer = page.locator('.academy-bug-overlay')
+        this.crashLayer = page.locator('.academy-crash-overlay-bug')
     }
 }
