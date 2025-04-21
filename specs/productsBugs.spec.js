@@ -17,8 +17,9 @@ test('Переключение количества продуктов на ст
     await productsListPage.acceptCookies();
     await productsListPage.gotoMinCountProducts();
     
-    await expect(bugPopupsPage.bugLayer)
-          .toContainText(errorsText.crushBugLongText);
+    await expect(bugPopupsPage.bugLayer).toBeVisible();
+    await expect(page.getByRole('heading', { name: errorsText.crashBugLongText }))
+          .toBeVisible();
     });
 
 test.describe('Баги по товарам', () => {
@@ -37,7 +38,7 @@ test.describe('Баги по товарам', () => {
       await productCardPage.changeCurrencyEUR();
 
       await expect(bugPopupsPage.crashLayer).toBeVisible();
-            //.toContainText(errorsText.crushBugShortText);
+            //.toContainText(errorsText.crashBugShortText);
 });
 
   /*test('Перейти на страницу производителя', async ({ page }) => {
@@ -87,7 +88,7 @@ test.describe('Баги по товарам', () => {
       await productCardPage.postComment(commentBuilder.name, commentBuilder.email, commentBuilder.text);
 
       await expect(bugPopupsPage.bugLayerInfo)
-            .toContainText(errorsText.crushBugLongText);
+            .toContainText(errorsText.crashBugLongText);
 });
 
   test('Фильтрация товаров по цене в карточке товара', async ({ page }) => {

@@ -85,6 +85,6 @@ test.describe('Баги по аккаунту', () => {
       await forgotPasswordPage.enterUserEmail(dataUserBuilder.email);
 
       await expect(bugPopupsPage.bugLayerInfo)
-            .toContainText(errorsText.crushBugShortText);
+            .toContainText(errorsText.crashBugShortText);
 });
 });

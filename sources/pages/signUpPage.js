@@ -9,8 +9,8 @@ export class SignUpPage {
       this.passwordField = page.locator('#ec_account_register_password')
       this.retypePasswordField = page.getByRole('textbox', { name: 'Retype Password*' })
       this.registerButton = page.getByRole('button', { name: 'REGISTER' })
-      //this.signUpEmailField = page.getByRole('textbox', { name: 'Email Address*' })
-      this.signUpEmailField = page.locator('#ec_account_login_email')
+      this.signUpEmailField = page.getByRole('textbox', { name: 'Email Address*' })
+      //this.signUpEmailField = page.locator('#ec_account_login_email')
       this.signUpPasswordField = page.locator('#ec_account_login_password')
       this.signUpButton = page.getByRole('button', { name: 'SIGN IN' })
     }
