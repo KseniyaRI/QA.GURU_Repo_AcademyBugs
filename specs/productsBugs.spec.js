@@ -17,7 +17,7 @@ test('Переключение количества продуктов на ст
     await productsListPage.acceptCookies();
     await productsListPage.gotoMinCountProducts();
     
-    await expect(bugPopupsPage.bugLayerLongText)
+    await expect(bugPopupsPage.bugLayer)
           .toContainText(errorsText.crushBugLongText);
     });
 
@@ -35,7 +35,7 @@ test.describe('Баги по товарам', () => {
     
       await productCardPage.changeCurrencyEUR();
 
-      await expect(bugPopupsPage.bugLayerShortText)
+      await expect(bugPopupsPage.bugLayerInfo)
             .toContainText(errorsText.crushBugShortText);
 });
 
@@ -46,7 +46,7 @@ test.describe('Баги по товарам', () => {
       await productCardPage.gotoManufacturer();
 
       await expect(bugPopupsPage.bugPopupQuestion)
-            .toContainText(errorsText.bugQuestion);
+            .toContainText(errorsText.bugQuestion);//??
 });
 
   test('Перейти на страницу Твиттера', async ({ page }) => {
@@ -85,7 +85,7 @@ test.describe('Баги по товарам', () => {
 
       await productCardPage.postComment(commentBuilder.name, commentBuilder.email, commentBuilder.text);
 
-      await expect(bugPopupsPage.bugLayerShortText)
+      await expect(bugPopupsPage.bugLayerInfo)
             .toContainText(errorsText.crushBugLongText);
 });
 

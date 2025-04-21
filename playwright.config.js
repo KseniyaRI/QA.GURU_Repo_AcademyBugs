@@ -5,7 +5,8 @@ export default defineConfig({
   timeout: 60000,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: 1,
+  fullyParallel: true, // запускать тесты параллельно
+  // workers: 1,
   reporter: [['html', { open: 'never' }] , ['allure-playwright']],
   outputDir: 'test-results/output/',
   use: {
