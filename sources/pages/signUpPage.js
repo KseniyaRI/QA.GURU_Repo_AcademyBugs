@@ -10,7 +10,7 @@ export class SignUpPage {
       this.retypePasswordField = page.getByRole('textbox', { name: 'Retype Password*' })
       this.registerButton = page.getByRole('button', { name: 'REGISTER' })
       this.signUpEmailField = page.getByRole('textbox', { name: 'Email Address*' })
-      this.signUpPasswordField = page.locator('.ec_account_login_password')
+      this.signUpPasswordField = page.locator('.ec_account_login_input_field')
       this.signUpButton = page.getByRole('button', { name: 'SIGN IN' })
     }
       async goToForgotPassword() {

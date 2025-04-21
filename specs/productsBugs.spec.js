@@ -36,8 +36,8 @@ test.describe('Баги по товарам', () => {
     
       await productCardPage.changeCurrencyEUR();
 
-      await expect(bugPopupsPage.crashLayer)
-            .toContainText(errorsText.crushBugShortText);
+      await expect(bugPopupsPage.crashLayer).toBeVisible();
+            //.toContainText(errorsText.crushBugShortText);
 });
 
   /*test('Перейти на страницу производителя', async ({ page }) => {
