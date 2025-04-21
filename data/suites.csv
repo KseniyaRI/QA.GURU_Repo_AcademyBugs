@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","60390","Восстановление пароля","chromium","Mon Apr 21 13:05:25 GMT 2025","broken","Mon Apr 21 13:06:26 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
-"","13437","Клик по адресу платежной информации","chromium","Mon Apr 21 13:02:54 GMT 2025","passed","Mon Apr 21 13:03:08 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
-"","13944","Добавление платежной информации","chromium","Mon Apr 21 13:03:08 GMT 2025","passed","Mon Apr 21 13:03:22 GMT 2025","Баги по аккаунту","accountInfoBugs.spec.js","",""
-"","7177","Переключение количества продуктов на странице","chromium","Mon Apr 21 13:06:43 GMT 2025","failed","Mon Apr 21 13:06:51 GMT 2025","","productsBugs.spec.js","",""
-"","5290","Клик по кнопке Sing In","chromium","Mon Apr 21 13:07:08 GMT 2025","passed","Mon Apr 21 13:07:14 GMT 2025","Баги по товарам","productsBugs.spec.js","",""
-"","4608","Перейти в карточку товара и поменять валюту","chromium","Mon Apr 21 13:07:03 GMT 2025","failed","Mon Apr 21 13:07:07 GMT 2025","Баги по товарам","productsBugs.spec.js","",""
