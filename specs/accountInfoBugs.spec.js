@@ -46,11 +46,9 @@ test.describe('Баги по аккаунту', () => {
 
       await expect(bugPopupsPage.bugPopupQuestion)
             .toContainText(errorsText.bugQuestion);    
-      
-            console.log('Тестируемый URL:', URL);
 });
 
-  /*test('Добавление платежной информации', async ({ page }) => {
+  test('Добавление платежной информации', async ({ page }) => {
       const signUpPage = new SignUpPage(page);
       const accountPage = new AccountPage(page);
       const billingInfoPage = new BillingInfoPage(page);
@@ -88,5 +86,5 @@ test.describe('Баги по аккаунту', () => {
 
       await expect(bugPopupsPage.bugLayerInfo)
             .toContainText(errorsText.crashBugShortText);
-});*/
+});
 });
