@@ -1,3 +1,4 @@
+import 'dotenv/config';      // <-- прочитает .env в process.env
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
   reporter: [['html', { open: 'never' }] , ['allure-playwright']],
   outputDir: 'test-results/output/',
   use: {
+    baseURL: process.env.BASE_URL,
     headless: true,
     // принудительно отбразить UI на английском
     locale: 'en-US',
@@ -26,6 +28,7 @@ export default defineConfig({
 
     screenshot: 'only-on-failure',   // сохранять скриншот при падении
     trace: 'retain-on-failure',      // сохранять трассировку при падении
+    
   },
 
   projects: [

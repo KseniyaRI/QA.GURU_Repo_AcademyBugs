@@ -5,10 +5,10 @@
   "description": "QA.GURU course. Tests for AcademyBugs",
   "main": "index.js",
   "scripts": {
-    "test" :" npx playwright test",
-    "ui" : "npx playwright test --ui",
-    "reportAwesome" :"npx allure awesome ./allure-results --single-file",
-    "reportClassic" :"npx allure classic ./allure-results --single-file",
+    "test": " npx playwright test",
+    "ui": "npx playwright test --ui",
+    "reportAwesome": "npx allure awesome ./allure-results --single-file",
+    "reportClassic": "npx allure classic ./allure-results --single-file",
     "codegen": "npx playwright codegen https://academybugs.com/find-bugs/#"
   },
   "repository": {
@@ -27,5 +27,8 @@
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.14.1",
     "allure-playwright": "^3.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
   }
 }

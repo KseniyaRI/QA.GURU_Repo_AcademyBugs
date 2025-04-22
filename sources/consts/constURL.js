@@ -1,1 +1,1 @@
-export const URL = 'https://academybugs.com/find-bugs/#'; //сайт с багами
+export const URL = process.env.BASE_URL;

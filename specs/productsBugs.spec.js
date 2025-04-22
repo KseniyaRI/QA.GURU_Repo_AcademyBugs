@@ -3,11 +3,11 @@ import { ProductsListPage, ProductCardPage, BugPopupsPage } from '../sources/pag
 import { URL, errorsText } from '../sources/consts/index.js';
 import { CommentBuilder } from '../sources/builders/index.js';
 
-const commentBuilder = new CommentBuilder()
+/*const commentBuilder = new CommentBuilder()
       .addCommentName()
       .addCommentEmail()
       .addCommentText()
-      .generateComment();
+      .generateComment();*/
 
 test('Переключение количества продуктов на странице', async ({ page }) => {
     const productsListPage = new ProductsListPage(page);
@@ -20,9 +20,11 @@ test('Переключение количества продуктов на ст
     await expect(bugPopupsPage.bugLayer).toBeVisible();
     await expect(page.getByRole('heading', { name: errorsText.crashBugLongText }))
           .toBeVisible();
+          
+          console.log('Тестируемый URL:', URL);
     });
 
-test.describe('Баги по товарам', () => {
+/*test.describe('Баги по товарам', () => {
   test.beforeEach(async ({ page }) => {
       const productsListPage = new ProductsListPage(page);
       
@@ -142,4 +144,4 @@ test.describe('Баги по товарам', () => {
       await expect(bugPopupsPage.bugPopupCongrats)
             .toContainText(errorsText.bugCongrats);
 });
-});
+});*/

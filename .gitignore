@@ -9,3 +9,4 @@
 .DS_Store
 tests/.DS_Store
 .allure
+.env
